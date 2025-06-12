@@ -18,7 +18,7 @@
 */
 import React from "react";
 // react plugin used to create charts
-import { Line, Pie } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 import hombre from "hombre.png";
 import mujer from "mujer.webp";
 // reactstrap components
@@ -99,14 +99,14 @@ function Dashboard() {
                 <hr />
                 <div className="stats">
                 </div>
-                <a
-                  href="/"
+                <Link
+                  to="/" 
                   className="simple-text logo-mini"
                 >
                   <div className="logo-img">
                     <img src={mujer} alt="react-logo" />
                   </div>
-                </a>
+                </Link>
               </CardFooter>
             </Card>
           </Col>         
